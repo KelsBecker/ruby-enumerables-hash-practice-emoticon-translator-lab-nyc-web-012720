@@ -20,6 +20,6 @@ end
 
 def get_english_meaning(emoticons_file, emoticon)
   binding.pry
-    emoticon_symbols = load_library(emoticons_file)[:get_emoticon][emoticon]
-    emoticon_symbols
+    emoticon_symbols = load_library(emoticons_file)[:get_meaning][emoticon]
+    
 end
