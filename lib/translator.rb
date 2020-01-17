@@ -19,7 +19,6 @@ def get_japanese_emoticon(emoticons_file, emoticon) #emoticon file = YAML emotic
 end
 
 def get_english_meaning(emoticons_file, emoticon)
-  binding.pry
     answer = load_library(emoticons_file)[:get_meaning][emoticon]
     answer ? answer : "Sorry, that emoticon was not found"
 end
