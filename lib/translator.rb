@@ -19,6 +19,7 @@ def get_japanese_emoticon(emoticons_file, emoticon) #emoticon file = YAML emotic
 end
 
 def get_english_meaning(emoticons_file, emoticon)
+  binding.pry
     emoticon_symbols = load_library(emoticons_file)[:get_emoticon][emoticon]
     emoticon_symbols
 end
