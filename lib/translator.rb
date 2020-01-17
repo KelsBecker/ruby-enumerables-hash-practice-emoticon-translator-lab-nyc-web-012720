@@ -20,6 +20,6 @@ end
 
 def get_english_meaning(emoticons_file, emoticon)
   binding.pry
-    emoticon_symbols = load_library(emoticons_file)[:get_meaning][emoticon]
-    
+    answer = load_library(emoticons_file)[:get_meaning][emoticon]
+    answer ? answer : "Sorry, that emoticon was not found"
 end
